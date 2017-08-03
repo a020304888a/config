@@ -1,1 +1,1 @@
-ln -s .vimrc ~/.vimrc
+cp .vimrc ~/.vimrc 

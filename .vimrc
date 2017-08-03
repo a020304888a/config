@@ -1,21 +1,34 @@
 syntax enable
+filetype indent on
 
+" set number
 set nu
+" set autoindent
 set ai
 set cursorline
 set mouse=a
 set ruler
 set bg=dark
+set showmode
+" set hlsearch
 set hls
 set incsearch
-set expandtab
+" set expandtab
 set laststatus=2
 set encoding=utf-8
+set tabstop=4
 
-filetype indent on
+" inoremap ( ()<Esc>i
+" inoremap " ""Esc>i
+" inoremap ' ''<Esc>i
+" inoremap [ []<Esc>i
+" inoremap (<CR> {<CR>}<Esc>ko
 
+" highlight
+" highlight Search term=reverse ctermbg=4 ctermfg=7
 hi LineNr cterm=bold ctermfg=DarkGrey ctermbg=NONE
 hi CursorLineNr cterm=bold ctermfg=Green ctermbg=NONE
+
 
 if has("autocmd")
         autocmd BufRead *.txt set tw=78
